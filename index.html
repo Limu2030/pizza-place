@@ -17,25 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      #intro {
-        background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-      }
-
-      /* Height for devices larger than 576px */
-      /* @media (min-width: 992px) {
-        #intro {
-          margin-top: -58.59px;
-        }
-      } */
-
-      /* .navbar .nav-link {
-        color: #fff !important;
-      } */
-    </style>
+    
   </head>
   <body>
     <div class="bg-photo">
@@ -83,7 +65,7 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Margherita Pizza</a></li>
                   <li><a class="dropdown-item" href="#">Formaggio Pizza</a></li>
-                  <li><a class="dropdown-item" href="#">Pizza 2</a></li>
+                  <li><a class="dropdown-item" href="#">Meat Deluxe Pizza</a></li>
                 </ul>
               </li>
             </ul>
@@ -115,26 +97,12 @@
               <h5 class="mb-4 text-capitalize">
                 so good you wish there was two of you
               </h5>
-              <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-                role="button"
-                rel="nofollow"
-                target="_blank"
-                >Start tutorial</a
-              >
-              <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="https://mdbootstrap.com/docs/standard/"
-                target="_blank"
-                role="button"
-                >Download MDB UI KIT</a
-              >
+              
             </div>
           </div>
         </div>
       </div>
-      <div class="container mt-5 mb-5">
+      <div class="container mt-5 mb-5 mask h-100" style="background-color: rgba(0, 0, 0, 0.5)" >
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- card 1 -->
           <div class="col">
@@ -178,28 +146,28 @@
                     aria-label="Default select example"
                   >
                     <option selected>Select Size</option>
-                    <option value="1">Small - 100KSH</option>
-                    <option value="2">MEDIUM - 200KSH</option>
-                    <option value="3">Large - 300KSH</option>
+                    <option value="1">Small  600KSH</option>
+                    <option value="2">Medium  900KSH</option>
+                    <option value="3">Large  1350KSH</option>
                   </select>
-                  <!-- SELECT TOPPINGS -->
+                  <!-- SELECT TOPPINGS --> 
                   <select
                     class="form-select mb-3"
                     aria-label="Default select example"
                   >
                     <option selected>Select Toppings</option>
-                    <option value="1">whatever +200KSH</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">Mushrooms +200KSH</option>
+                    <option value="2">Pepperoni +350KSH</option>
+                    <option value="3">Extra Cheese +500KSH</option>
                   </select>
                   <select
                     class="form-select mb-3"
                     aria-label="Default select example"
                   >
                     <option selected>Select crust</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">Stuffed Crust +300KSH</option>
+                    <option value="2">Cracker Crust +450KSH</option>
+                    <option value="3">Flat Bread Crust +550KSH</option>
                   </select>
                   <select
                     class="form-select mb-3"
@@ -209,6 +177,9 @@
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                    <option value="6">Six</option>
                   </select>
                   <!-- DELIVERY -->
                   <div class="form-check mb-3">
@@ -219,7 +190,109 @@
                       onchange="getValue(this.value)"
                     />
                     <label class="form-check-label" for="delivery">
-                      Delivery
+                      I want my pizza delivered
+                    </label>                    
+                  </div>
+                  <!-- ENTER LOACTION -->
+                  <div class="d-none js-address">
+                    <label for="inputText5" class="form-label"
+                      >Enter Address</label
+                    >
+                    <input type="text" id="inputText5" class="form-control" />
+                  </div>              
+                            
+                </div>
+                <!-- <a href="order" class="btn btn-primary">Place Order</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col">
+            <div class="card">
+              <div
+                class="bg-image hover-overlay ripple"
+                data-mdb-ripple-color="light"
+              >
+                <img
+                  src="images/formaggio2.jpg"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.15)"
+                  ></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Formaggio Pizza</h5>
+                <p class="card-text">
+                  Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
+                </p>
+                <div class="mb-3">
+                  <!-- SELECT PIZZA -->
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      I want this pizza
+                    </label>
+                  </div>
+                  <!-- SELECT SIZE -->
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Size</option>
+                    <option value="1">Small   400KSH</option>
+                    <option value="2">Medium  600KSH</option>
+                    <option value="3">Large   900KSH</option>
+                  </select>
+                  <!-- SELECT TOPPINGS -->
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Toppings</option>
+                    <option value="1">Sausage +600KSH</option>
+                    <option value="2">Green peppers +300KSH </option>
+                    <option value="3">Onions +300KSH</option>
+                  </select>
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select crust</option>
+                    <option value="1">Pizza bagel +500KSH</option>
+                    <option value="2">Cheese stuffed +600KSH</option>
+                    <option value="3">Greek crust +700KSH</option>
+                  </select>
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>How many pizzas do you want</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                    <option value="6">Six</option>
+                  </select>
+                  <!-- DELIVERY -->
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="delivery js-delivery"
+                      onchange="getValue(this.value)"
+                    />
+                    <label class="form-check-label" for="delivery">
+                      I want my pizza delivered
                     </label>
                     <script>
                       // function getValue(value) {
@@ -254,6 +327,7 @@
               </div>
             </div>
           </div>
+          <!-- card 3 -->
           <div class="col">
             <div class="card">
               <div
@@ -261,7 +335,7 @@
                 data-mdb-ripple-color="light"
               >
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
+                  src="images/deluxe2.jpg"
                   class="img-fluid"
                 />
                 <a href="#!">
@@ -272,44 +346,108 @@
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Meat Deluxe Pizza</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken
                 </p>
-                <a href="#!" class="btn btn-primary">Button</a>
+                <div class="mb-3">
+                  <!-- SELECT PIZZA -->
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      I want this pizza
+                    </label>
+                  </div>
+                  <!-- SELECT SIZE -->
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Size</option>
+                    <option value="1">Small  900KSH</option>
+                    <option value="2">Medium 1200KSH</option>
+                    <option value="3">Large  2000KSH</option>
+                  </select>
+                  <!-- SELECT TOPPINGS -->
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Toppings</option>
+                    <option value="1">Black olives +300KSH</option>
+                    <option value="2">Jalapeno peppers +300KSH</option>
+                    <option value="3">Extra barbaque +500KSH</option>
+                  </select>
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select crust</option>
+                    <option value="1">Flatbread +300KSH</option>
+                    <option value="2">New haven + 400KSH</option>
+                    <option value="3">Glazed with garlic +500KSH</option>
+                  </select>
+                  <select
+                    class="form-select mb-3"
+                    aria-label="Default select example"
+                  >
+                    <option selected>How many pizzas do you want</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                    <option value="6">Six</option>
+                  </select>
+                  <!-- DELIVERY -->
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="delivery js-delivery"
+                      onchange="getValue(this.value)"
+                    />
+                    <label class="form-check-label" for="delivery">
+                      I want my pizza delivered
+                    </label>
+                    <script>
+                      // function getValue(value) {
+                      //   alert("Delivery Cost 500KSH");
+                      // }
+                    </script>
+                  </div>
+                  <!-- ENTER LOCATION -->
+                  <div class="d-none js-address">
+                    <label for="inputText5" class="form-label"
+                      >Enter Address</label
+                    >
+                    <input type="text" id="inputText5" class="form-control" />
+                  </div>
+                  <script>
+                    // var address = document.querySelector(".js-delivery");
+
+                    function getValue(value) {
+                      var address = document.querySelector(".js-address");
+                      console.log(value);
+                      if (value === "on") {
+                        address.classList.remove("d-none");
+                        address.classList.add("d-block");
+                      } else {
+                        address.classList.remove("d-block");
+                        address.classList.add("d-none");
+                      }
+                    }
+                  </script>
+                </div>
+                <!-- <a href="order" class="btn btn-primary">Place Order</a> -->
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div
-                class="bg-image hover-overlay ripple"
-                data-mdb-ripple-color="light"
-              >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
-                  class="img-fluid"
-                />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.15)"
-                  ></div>
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container mb-5">
         <!-- Button trigger modal -->
         <button
