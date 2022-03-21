@@ -1,19 +1,29 @@
-  // function getValue(value) {
- //   alert("Delivery Cost 500KSH");
-// }
-
-// var address = document.querySelector(".js-delivery");
-
-function getValue(value) {
-    var address = document.querySelector(".js-address");
-    console.log(value);
-    if (value === "on") {
-      address.classList.remove("d-none");
-      address.classList.add("d-block");
-    } else {
-      address.classList.remove("d-block");
-      address.classList.add("d-none");
-    }
-  }
-
+function Extras(toppings, crust, size){
+  this.toppings = toppings
+  this.crust = crust
+  this.size = size 
+} 
+let orders = []
+let pizzas = [{
+  pizzaName: "magharita", 
+  id: 1
   
+},{
+  pizzaName: "formaggio", 
+  id: 2
+  
+},{
+  pizzaName: "meatdeluxe", 
+  id: 3
+  
+}]
+function checkout(id){
+
+}
+if(document.getElementById("btnradio1").checked){
+  // magharita button is checked
+} else if(document.getElementById("btnradio2").checked){
+  // formaggio button is checked
+} else if(document.getElementById("btnradio3").checked){
+  // deluxe button is checked
+}
