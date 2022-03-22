@@ -4,6 +4,10 @@
         background-size: cover;
         height: 100vh;
       }
+      .menu {
+        background-color: grey;
+        background-image: image(/home/lilly/Documents/pizza-place/images/logo2.png);
+      }
 
       /* Height for devices larger than 576px */
       /* @media (min-width: 992px) {
