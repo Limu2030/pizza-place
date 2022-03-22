@@ -20,7 +20,6 @@
 - HTML
 - CSS
 - JavaScript
-- JQuery
 - Bootstrap
 
 ## Live Link
