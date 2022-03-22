@@ -102,8 +102,10 @@
           </div>
         </div>
       </div>
-      <div class="container mt-5 mb-5 mask h-100" style="background-color: rgba(0, 0, 0, 0.5)" >
+      <div class="container mt-5 mb-5 mask h-100" style="background-color: rgba(235, 110, 110, 0.5)" >
+        <h2 class="display-5 text-capitalize col-6 mx-auto"> <strong>our pizza menu</strong> </h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
+          
           <!-- card 1 -->
           <div class="col mb-5">
             <div class="card">
@@ -112,7 +114,7 @@
                 data-mdb-ripple-color="light"
               >
                 <img
-                  src="images/margherita2.jpg.jpg"
+                  src="images/Formaggio.jpg"
                   class="img-fluid"
                 />
                 <a href="#!">
@@ -128,8 +130,7 @@
                   Fresh tomatoes, fresh mozzarella, fresh basil
                 </p>
                 
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradiom" id="btnradio1" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="btnradiom" id="btnradio1" autocomplete="off" checked>
                   <label class="btn btn-outline-primary" for="btnradio1">Choose</label>
               </div>
             </div>
@@ -158,8 +159,7 @@
                   Fresh tomatoes, fresh mozzarella, fresh basil
                 </p>
                 
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradiof" id="btnradio2" autocomplete="off" checked>
+                 <input type="radio" class="btn-check" name="btnradiof" id="btnradio2" autocomplete="off" checked>
                   <label class="btn btn-outline-primary" for="btnradio2">Choose</label>
               </div>
             </div>
@@ -188,8 +188,7 @@
                   Fresh tomatoes, fresh mozzarella, fresh basil
                 </p>
                 
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradiod" id="btnradio3" autocomplete="off" checked>
+                 <input type="radio" class="btn-check" name="btnradiod" id="btnradio3" autocomplete="off" checked>
                   <label class="btn btn-outline-primary" for="btnradio3">Choose</label>
               </div>
             </div>
@@ -211,7 +210,7 @@
               <option value="large">Large  1350KSH</option>
             </select>
             <!-- SELECT TOPPINGS --> 
-            <select id="topping"
+            <select id="toppings"
               class="form-select mb-3"
               aria-label="Default select example"
             >
@@ -252,9 +251,9 @@
               <label class="form-check-label" for="delivery">
                 I want my pizza delivered
               </label>
-              <br> <br>
             
-                <a href="order" class="btn btn-primary">CHECKOUT</a>
+            
+                <button id="checkout" class="btn btn-primary d-grid gap-2 col-6 mx-auto " onclick="checkout()">CHECKOUT</button>
             
         </div>     
     <script
@@ -262,5 +261,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>

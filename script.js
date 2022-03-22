@@ -17,13 +17,20 @@ let pizzas = [{
   id: 3
   
 }]
-function checkout(id){
-
-}
-if(document.getElementById("btnradio1").checked){
-  // magharita button is checked
-} else if(document.getElementById("btnradio2").checked){
-  // formaggio button is checked
-} else if(document.getElementById("btnradio3").checked){
-  // deluxe button is checked
+let selectedId;
+function checkout(){
+  if(document.getElementById("btnradio1").checked){
+   selectedId = 1
+  } else if(document.getElementById("btnradio2").checked){
+    selectedId = 2
+  } else if(document.getElementById("btnradio3").checked){
+    selectedId = 3
+  }
+let pizza = pizzas.find((pizza)=>pizza.id==selectedId)
+let size = document.getElementById("size").value 
+let toppings = document.getElementById("toppings").value
+let crust = document.getElementById("crust").value
+const extra = new Extras(toppings, crust, size)
+const order = {...pizza,...extra}
+console.log(order)
 }
